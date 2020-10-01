@@ -1,0 +1,26 @@
+title: GAP - Java Course
+language: English
+summary: |
+  Java Course:
+  1 Basics
+  2 OO
+  3 Design Patterns
+  4 Exceptions &amp; IO
+  5 Generics
+  6 Collections
+  7 Concurrency
+  8 Functional
+  9 Reactive
+programming_language: Java
+programming_language_version: 11
+content:
+- 1 Basics
+- 2 OO
+- 4 Exceptions   IO
+- 5 Generics
+- 6 Collections
+- 6 Concurrency
+- 8 Functional
+- 9 Reactive
+- 3 Design Patterns
+mode: Study

@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: It will compile but throw an error in runtime
+- text: I'm the main
+- text: It will not compile
+- text: No! I'm still the main!
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Correct solution
+  time: Mon, 28 Sep 2020 12:11:25 UTC
+record: -1
+selected_options:
+- 0

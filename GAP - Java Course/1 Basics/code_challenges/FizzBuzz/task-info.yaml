@@ -1,0 +1,76 @@
+type: edu
+files:
+- name: src/NumberWordCorrelation.java
+  visible: true
+  text: |-
+    public class NumberWordCorrelation {
+      private Integer number;
+      private String word;
+
+      public NumberWordCorrelation(Integer number, String word) {
+        this.number = number;
+        this.word = word;
+      }
+
+      public Integer getNumber() {
+        return number;
+      }
+
+      public String getWord() {
+        return word;
+      }
+    }
+  learner_created: false
+- name: src/TaskFizzBuzz.java
+  visible: true
+  placeholders:
+  - offset: 139
+    length: 37
+    placeholder_text: /*TODO put your implementation here*/
+    initial_state:
+      length: 37
+      offset: 139
+    initialized_from_dependency: false
+    possible_answer: |-
+      NumberWordCorrelation[] correlations = {
+                  new NumberWordCorrelation(3, "Fizz"),
+                  new NumberWordCorrelation(5, "Buzz"),
+          };
+          for (int i = 1; i <= n; i++) {
+            boolean isDivisible = false;
+            for (NumberWordCorrelation correlation : correlations) {
+              if (i % correlation.getNumber() == 0) {
+                isDivisible = true;
+                System.out.print(correlation.getWord());
+              }
+            }
+            if (!isDivisible) {
+              System.out.print("" + i);
+            }
+            if (i != n) {
+              System.out.print(", ");
+            }
+          }
+    selected: false
+    status: Unchecked
+  text: |-
+    public class TaskFizzBuzz {
+
+      public static void main(String[] args) {
+        fizzBuzz(30);
+      }
+
+      private static void fizzBuzz(int n) {
+        /*TODO put your implementation here*/
+      }
+    }
+  learner_created: false
+- name: test/Test.java
+  visible: false
+  text: |-
+    public class Test {
+        // put your test here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

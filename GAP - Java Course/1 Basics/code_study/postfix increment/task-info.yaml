@@ -1,0 +1,37 @@
+type: edu
+files:
+- name: src/TaskPostfixIncrement.java
+  visible: true
+  placeholders:
+  - offset: 226
+    length: 59
+    placeholder_text: /*TODO initialize expectedXValue with the expected value */
+    initial_state:
+      length: 59
+      offset: 226
+    initialized_from_dependency: false
+    possible_answer: expectedXValue = 11;
+    selected: false
+    status: Unchecked
+  text: |-
+    public class TaskPostfixIncrement {
+      public static void main(String[] args) {
+        int x = 0;
+        while (x++ < 10) {
+        }
+        checkForXValue(x);
+
+      }
+
+      private static void checkForXValue(int x) {
+        int expectedXValue;
+        /*TODO initialize expectedXValue with the expected value */
+
+        System.out.println("Guessed correctly the value of x ? - " + (x == expectedXValue));
+
+      }
+
+    }
+  learner_created: false
+status: Unchecked
+record: -1

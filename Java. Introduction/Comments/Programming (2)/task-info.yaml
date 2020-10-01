@@ -1,0 +1,21 @@
+type: code
+custom_name: Programming
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public class Main {
+
+        public static void main(String[] args) {
+
+            /*
+            // System.out.println("Yet another simple Java application");
+            System.out.println("Do not print this line");
+        }
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Correct solution
+  time: Mon, 28 Sep 2020 11:52:30 UTC
+record: -1

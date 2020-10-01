@@ -1,0 +1,11 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  text: |-
+    class Task {
+      //put your task here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

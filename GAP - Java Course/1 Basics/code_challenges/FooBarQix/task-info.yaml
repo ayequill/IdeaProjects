@@ -1,0 +1,73 @@
+type: edu
+files:
+- name: src/TaskFooBarQix.java
+  visible: true
+  placeholders:
+  - offset: 79
+    length: 37
+    placeholder_text: /*TODO put your implementation here*/
+    initial_state:
+      length: 37
+      offset: 79
+    initialized_from_dependency: false
+    possible_answer: |-
+      if (i % 3 == 0) s += "Foo";
+          if (String.valueOf(i).contains("3")) s += "Foo";
+          if (i % 5 == 0) s += "Bar";
+          if (String.valueOf(i).contains("5")) s += "Bar";
+          if (i % 7 == 0) s += "Qix";
+          if (String.valueOf(i).contains("7")) s += "Qix";
+    selected: false
+    status: Unchecked
+  text: |-
+    class TaskFooBarQix {
+
+      public String compute(int i) {
+        String s = "";
+        /*TODO put your implementation here*/
+        return s;
+      }
+    }
+  learner_created: false
+- name: test/TestFooBarQix.java
+  visible: false
+  text: |
+    import org.junit.experimental.theories.Theory;
+
+    import java.util.Map;
+
+    import static java.util.Map.entry;
+    import static org.junit.Assert.assertEquals;
+
+    public class TestFooBarQix {
+
+      public static Map<Integer, String> dataPoints = Map.ofEntries(
+              entry(1, "123"),
+              entry(2, "2"),
+              entry(3, "Foo"),
+              entry(4, "4"),
+              entry(5, "BarBar"),
+              entry(6, "Foo"),
+              entry(7, "QixQix"),
+              entry(8, "8"),
+              entry(9, "Foo"),
+              entry(10, "Bar"),
+              entry(13, "Foo"),
+              entry(15, "FooBarBar"),
+              entry(21, "FooQix"),
+              entry(33, "FooFooFoo"),
+              entry(51, "FooBar"),
+              entry(53, "BarFoo")
+      );
+
+      @Theory
+      public void test() {
+        TaskFooBarQix task = new TaskFooBarQix();
+        for (Map.Entry<Integer, String> entry : dataPoints.entrySet()) {
+          assertEquals(task.compute(entry.getKey()), entry.getValue());
+        }
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1

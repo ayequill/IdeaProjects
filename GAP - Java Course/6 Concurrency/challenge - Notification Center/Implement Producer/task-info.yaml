@@ -1,0 +1,68 @@
+type: edu
+files:
+- name: src/Channel.java
+  visible: true
+  text: |-
+    public class Channel {
+      protected String message;
+      protected boolean isChannelEmpty = true;
+
+      public synchronized String take() {
+        if (isChannelEmpty) {
+          callWaitMethod();
+        }
+        isChannelEmpty = true;
+        notifyListenersAboutChangesInChannel();
+        return message;
+      }
+
+      public synchronized void put(String message) {
+        if (!isChannelEmpty) {
+          callWaitMethod();
+        }
+        this.message = message;
+        isChannelEmpty = false;
+        notifyListenersAboutChangesInChannel();
+      }
+
+      protected void notifyListenersAboutChangesInChannel() {
+        notifyAll();
+      }
+
+      protected void callWaitMethod() {
+        try {
+          wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  learner_created: false
+- name: src/Producer.java
+  visible: true
+  text: |-
+    public class Producer extends Thread {
+      private Channel c;
+
+      public Producer(Channel c) {
+        this.c = c;
+      }
+
+      @Override
+      public void run() {
+        for (int i = 1; i <= 10; i++) {
+          c.put("msg_" + i);
+        }
+        c.put("DONE");
+      }
+    }
+  learner_created: false
+- name: test/Test.java
+  visible: false
+  text: |-
+    public class Test {
+        // put your test here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

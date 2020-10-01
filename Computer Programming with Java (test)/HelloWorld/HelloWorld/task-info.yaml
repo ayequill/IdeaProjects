@@ -1,0 +1,33 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 87
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 89
+    initialized_from_dependency: false
+    possible_answer: |-
+      public static void main(String[]args){
+          System.out.println("Hello World!");
+        }
+    selected: true
+    status: Unchecked
+  text: |-
+    class Task {
+      //Write all necessary code here to make the Hello World! message appear
+      type here
+    }
+  learner_created: false
+- name: test/Test.java
+  visible: false
+  text: |-
+    class Test {
+        // put your test here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

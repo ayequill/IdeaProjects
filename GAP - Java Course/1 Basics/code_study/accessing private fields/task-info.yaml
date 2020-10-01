@@ -1,0 +1,37 @@
+type: edu
+files:
+- name: src/Student.java
+  visible: true
+  text: |-
+    public class Student {
+      private String name;
+      private Integer age;
+
+      public Student(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+      }
+    }
+  learner_created: false
+- name: src/TaskAccessingPrivateFields.java
+  visible: true
+  text: |-
+    import java.lang.reflect.Field;
+
+    public class TaskAccessingPrivateFields {
+      public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+        Student student = new Student("John", 21);
+
+        readPrivateField(student);
+
+      }
+
+      private static void readPrivateField(Student student) throws NoSuchFieldException, IllegalAccessException {
+        Field field = student.getClass().getDeclaredField("name");
+        field.setAccessible(true);
+        System.out.println(field.get(student));
+      }
+    }
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,9 @@
+type: framework
+content:
+- hello world
+- postfix increment
+- summing non-floating types
+- comparing Integers
+- slow loops
+- accessing private fields
+current_task: 0

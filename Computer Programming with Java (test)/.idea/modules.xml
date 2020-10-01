@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Computer_Programming_with_Java__test_.iml" filepath="$PROJECT_DIR$/.idea/modules/Computer_Programming_with_Java__test_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HelloWorld/HelloWorld/Computer_Programming_with_Java__test_.HelloWorld-HelloWorld.iml" filepath="$PROJECT_DIR$/.idea/modules/HelloWorld/HelloWorld/Computer_Programming_with_Java__test_.HelloWorld-HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HelloWorld/HelloWorld/Computer_Programming_with_Java__test_.HelloWorld-HelloWorld.main.iml" filepath="$PROJECT_DIR$/.idea/modules/HelloWorld/HelloWorld/Computer_Programming_with_Java__test_.HelloWorld-HelloWorld.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HelloWorld/HelloWorld/Computer_Programming_with_Java__test_.HelloWorld-HelloWorld.test.iml" filepath="$PROJECT_DIR$/.idea/modules/HelloWorld/HelloWorld/Computer_Programming_with_Java__test_.HelloWorld-HelloWorld.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Computer_Programming_with_Java__test_.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Computer_Programming_with_Java__test_.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Computer_Programming_with_Java__test_.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Computer_Programming_with_Java__test_.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Computer_Programming_with_Java__test_.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Computer_Programming_with_Java__test_.util.test.iml" />
+    </modules>
+  </component>
+</project>
